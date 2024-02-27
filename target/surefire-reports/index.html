@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,  2 skipped,  2 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,  2 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="sauravpractice.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="loginErrorValidation">loginErrorValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sauravpractice.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="productErrorValidation">productErrorValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -150,11 +155,6 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sauravpractice.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="productErrorValidation">productErrorValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="sauravpractice.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderTest(sausejneh@gmail.com, LWpass11$, ADIDAS ORIGINAL)">submitOrderTest(sausejneh@gmail.com, LWpass11$, ADIDAS ORIGINAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -187,9 +187,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d9f4ee6515b8938126236adf4df1eb8, findElement {using=css selector, value=iv[aria-label=&apos;Incorrect email or password.&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52817/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8d9f4ee6515b8938126236adf4df1eb8
+Command: [deeaaae3fa6522de8d9e2da81f5fdf1b, findElement {using=css selector, value=iv[aria-label=&apos;Incorrect email or password.&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53290/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: deeaaae3fa6522de8d9e2da81f5fdf1b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -221,6 +221,38 @@ Session ID: 8d9f4ee6515b8938126236adf4df1eb8
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productErrorValidation">
+                  </a> <!-- productErrorValidation -->
+                  <span class="method-name">productErrorValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-sll-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1025, 27). Other element would receive the click: &lt;div _ngcontent-sll-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.70)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6d480d32e9675cc1122c9be1fb3c296, clickElement {id=f.38976883CBE03604EDCDC04D0EEB6BE8.d.FCBF33E0AE17E62B2043140E18323064.e.79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53310/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d6d480d32e9675cc1122c9be1fb3c296)] -&gt; css selector: [routerlink*=&quot;cart&quot;]]
+Session ID: d6d480d32e9675cc1122c9be1fb3c296
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at sauravpractice.abstractcomponents.AbstractComponent.goToCart(AbstractComponent.java:39)
+	at sauravpractice.tests.ErrorValidationsTest.productErrorValidation(ErrorValidationsTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-failed">
@@ -235,15 +267,15 @@ Session ID: 8d9f4ee6515b8938126236adf4df1eb8
                   </a> <!-- submitOrderTest(srvmishra111@gmail.com, LWpass11$, ZARA COAT 3) -->
                   <span class="method-name">submitOrderTest</span>
                   <span class="parameters">(srvmishra111@gmail.com,LWpass11$,ZARA COAT 3)</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 562)
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 571)
   (Session info: chrome=122.0.6261.70)
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [65c644b09c5e7a4a2480f23af22ac2b4, clickElement {id=f.AE5C2233CF0AB4AA570671743F60AD1A.d.BC3309CA2FC12FFBCF81E295CAFC50A5.e.103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52753}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52753/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (65c644b09c5e7a4a2480f23af22ac2b4)] -&gt; css selector: .totalRow .btn-primary]
-Session ID: 65c644b09c5e7a4a2480f23af22ac2b4
+Command: [0d4c0f9b4ac5d9a59b8f8edb2edbfa0b, clickElement {id=f.A10D7DCAA217B681F0A24CCEA396B8DC.d.34A87F01DB1DAFB64C02300642603DAB.e.108}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53226/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0d4c0f9b4ac5d9a59b8f8edb2edbfa0b)] -&gt; css selector: .totalRow .btn-primary]
+Session ID: 0d4c0f9b4ac5d9a59b8f8edb2edbfa0b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -281,9 +313,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38d0d53ee4658f4e6cb15bca40a2cb38, findElement {using=css selector, value=iv[aria-label=&apos;Incorrect email or password.&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52797/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 38d0d53ee4658f4e6cb15bca40a2cb38
+Command: [d6ca906c8478c012fc72a2f821661abf, findElement {using=css selector, value=iv[aria-label=&apos;Incorrect email or password.&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53271/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6ca906c8478c012fc72a2f821661abf
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -337,21 +369,6 @@ Session ID: 38d0d53ee4658f4e6cb15bca40a2cb38
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">sauravpractice.tests.ErrorValidationsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="productErrorValidation">
-                  </a> <!-- productErrorValidation -->
-                  <span class="method-name">productErrorValidation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -443,23 +460,23 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrderTest')
 data.setCell(0, 2, 'sauravpractice.tests.SubmitOrderTest')
-data.setCell(0, 3, 12238);
+data.setCell(0, 3, 12144);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'submitOrderTest')
 data.setCell(1, 2, 'sauravpractice.tests.SubmitOrderTest')
-data.setCell(1, 3, 9330);
+data.setCell(1, 3, 9134);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'productErrorValidation')
+data.setCell(2, 1, 'loginErrorValidation')
 data.setCell(2, 2, 'sauravpractice.tests.ErrorValidationsTest')
-data.setCell(2, 3, 6035);
+data.setCell(2, 3, 5321);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginErrorValidation')
 data.setCell(3, 2, 'sauravpractice.tests.ErrorValidationsTest')
-data.setCell(3, 3, 5297);
+data.setCell(3, 3, 5244);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginErrorValidation')
+data.setCell(4, 1, 'productErrorValidation')
 data.setCell(4, 2, 'sauravpractice.tests.ErrorValidationsTest')
-data.setCell(4, 3, 5285);
+data.setCell(4, 3, 4056);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'orderHistoryTest')
 data.setCell(5, 2, 'sauravpractice.tests.SubmitOrderTest')
@@ -468,7 +485,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -503,68 +520,70 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">submitOrderTest(srvmishra111@gmail.com, LWpass11$, ZARA COAT 3)</span>
-                <span class="method-start">2137 ms</span>
+                <span class="method-start">4027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11498 ms</span>
+                <span class="method-start">13184 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">11588 ms</span>
+                <span class="method-start">13259 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderTest(sausejneh@gmail.com, LWpass11$, ADIDAS ORIGINAL)</span>
-                <span class="method-start">13191 ms</span>
+                <span class="method-start">19049 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25429 ms</span>
+                <span class="method-start">31193 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">orderHistoryTest</span>
-                <span class="method-start">25518 ms</span>
+                <span class="method-start">31292 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">sauravpractice.tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">25838 ms</span>
+                <span class="method-start">31618 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginErrorValidation</span>
-                <span class="method-start">28628 ms</span>
+                <span class="method-start">34866 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33925 ms</span>
+                <span class="method-start">40187 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">33992 ms</span>
+                <span class="method-start">40227 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginErrorValidation</span>
-                <span class="method-start">35538 ms</span>
+                <span class="method-start">43130 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40839 ms</span>
+                <span class="method-start">48384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">40951 ms</span>
+                <span class="method-start">48447 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">productErrorValidation</span>
-                <span class="method-start">42530 ms</span>
+                <span class="method-start">50239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48565 ms</span>
+                <span class="method-start">54304 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

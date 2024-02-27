@@ -21,6 +21,7 @@
       <class name="sauravpractice.tests.ErrorValidationsTest">
         <methods>
           <include name="loginErrorValidation"/>
+          <include name="productErrorValidation"/>
           <include name="launchApplication"/>
           <include name="tearDown"/>
         </methods>
